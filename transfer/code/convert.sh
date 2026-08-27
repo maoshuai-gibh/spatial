@@ -21,24 +21,7 @@ mkdir -p "${QC_DIR}"
 
 
 echo "====================================="
-echo "Start LSM -> OME-Zarr pipeline"
-
-
-echo "Python:"
-${PYTHON} --version
-
-
-echo "Zarr:"
-${PYTHON} -c "import zarr; print(zarr.__version__)"
-
-
-echo ""
-
-echo "Input : ${INPUT_DIR}"
-echo "Output: ${OUTPUT_DIR}"
-echo "QC    : ${QC_DIR}"
-echo "====================================="
-
+echo "Start transfer LSM to OME-Zarr"
 
 # loop samples
 for folder in "${INPUT_DIR}"/*
